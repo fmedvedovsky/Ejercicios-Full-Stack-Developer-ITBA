@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inscripción</title>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <div>
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <br>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+            </div>
+            <br>
+            <div>
+                <label for="correoElectronico">Correo Electrónico:</label>
+                <br>
+                <input type="email" id="correoElectronico" name="correoElectronico" required>
+            </div>
+            <br>
+            <div>
+                <label for="contraseña">Crear Contraseña:</label>
+                <br>
+                <input type="password" id="contraseña" name="contraseña" required>
+            </div>
+            <br>
+            <div>
+                <label for="tallerDeInteres">Taller de Interés:</label>
+                <select id="tallerDeInteres" name="tallerDeInteres" required>
+                    <option value="tallerA">Taller A</option>
+                    <option value="tallerB">Taller B</option>
+                    <option value="tallerC">Taller C</option>
+                    <option value="tallerD">Taller D</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Tipo de Asistencia:</label>
+                <br>
+                <input type="radio" id="asistenciaPresencial" name="tipoDeAsistencia" value="Presencial" required>
+                <label for="asistenciaPresencial">Presencial</label>
+                <br>
+                <input type="radio" id="asistenciaVirtual" name="tipoDeAsistencia" value="Virtual" required>
+                <label for="asistenciaVirtual">Virtual</label>
+            </div>
+            <br>
+            <div>
+                <label for="terminosYCondiciones">Acepto los términos y condiciones:</label>
+                <input type="checkbox" id="terminosYCondiciones" name="terminosYCondiciones" required>
+            </div>
+            <br>
+            <div>
+                <label for="comentariosAdicionales">Comentarios adicionales:</label>
+                <br>
+                <textarea id="comentariosAdicionales" name="comentariosAdicionales" rows="5"></textarea>
+            </div>
+            <br>
+
+            <button type="submit">Inscribirme</button>
+        </form>
+    </body>
+</html>
+
+
+<!--
+
+    Nombre Completo: Un <input type="text">.
+    Correo Electrónico: Un <input type="email">.
+    Crear Contraseña: Un <input type="password">.
+    Taller de Interés: Un menú desplegable (<select>) con al menos tres talleres como opciones (<option>).
+    Tipo de Asistencia: Usa dos <input type="radio"> con el mismo name para las opciones "Presencial" y "Virtual".
+    Acepto los términos y condiciones: Un <input type="checkbox">.
+    Comentarios adicionales: Un <textarea> con 5 filas de alto.
+
+-->
