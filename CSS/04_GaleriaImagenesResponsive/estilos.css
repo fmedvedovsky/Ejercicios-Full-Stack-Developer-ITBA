@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tarjeta-foto {
+  width: 95%;
+  padding: 25px;
+  border: 1px solid #cccccc;
+  box-shadow: 5px 5px 10px #e0e0e0;
+  margin: 40px auto;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta-foto img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .galeria {
+    flex-direction: row;
+  }
+  .tarjeta-foto {
+    width: 30%;
+  }
+}
