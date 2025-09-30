@@ -1,19 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import TarjetaPresentacion from './TarjetaPresentacion';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Header";
+import MainContent from "./MainContent";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Mi Primera App en React</h1>
-      <p>FDM</p>
-
-
-      <TarjetaPresentacion />
-      <TarjetaPresentacion />
-      <TarjetaPresentacion />
-
-    </div>
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
   );
 }
 
